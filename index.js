@@ -30,6 +30,7 @@ const displayEntries = () => {
 
     const tableEntries = entries.map((entry) => {
         const nameCell = `<td class='border px-4 py-2'> ${entry.name} </td>`;
+        const nameCell = `<td class='border px-4 py-2'> ${entry.name} </td>`;
         const emailCell = `<td class='border px-4 py-2'> ${entry.email} </td>`;
         const passwordCell = `<td class='border px-4 py-2'> ${entry.password} </td>`;
         const dobCell = `<td class='border px-4 py-2'> ${entry.dob} </td>`;
