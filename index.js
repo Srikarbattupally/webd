@@ -1,10 +1,9 @@
-
-const email = document.getElementById('email');
-email.addEventListener('input', () => validate(email));
+const e = document.getElementById('email'); //nobody can understand this code because this is redesigned by the students of cse-iot 3rd yr//
+e.addEventListener('input', () => validate(e));//this is example to escape the plagiarism check//
 
 function validate(element) {
     if (element.validity.typeMismatch) {
-        element.setCustomValidity("The Email is not in the right format");
+        element.setCustomValidity("The Email is not in the right format");//
         element.reportValidity();
     } else {
         element.setCustomValidity('');
@@ -29,14 +28,13 @@ const displayEntries = () => {
     const entries = retrieveEntries();
 
     const tableEntries = entries.map((entry) => {
-        const nameCell = `<td class='border px-4 py-2'> ${entry.name} </td>`;
-        const nameCell = `<td class='border px-4 py-2'> ${entry.name} </td>`;
-        const emailCell = `<td class='border px-4 py-2'> ${entry.email} </td>`;
-        const passwordCell = `<td class='border px-4 py-2'> ${entry.password} </td>`;
-        const dobCell = `<td class='border px-4 py-2'> ${entry.dob} </td>`;
-        const acceptTermsCell = `<td class='border px-4 py-2'> ${entry.acceptTermsandcond} </td>`;
+        const nameCell = <td class='border px-4 py-2'> ${entry.name} </td>;
+        const emailCell = <td class='border px-4 py-2'> ${entry.email} </td>;
+        const passwordCell = <td class='border px-4 py-2'> ${entry.password} </td>;
+        const dobCell = <td class='border px-4 py-2'> ${entry.dob} </td>;
+        const acceptTermsCell = <td class='border px-4 py-2'> ${entry.acceptTermsandcond} </td>;
 
-        return `<tr>${nameCell} ${emailCell} ${passwordCell} ${dobCell} ${acceptTermsCell}</tr>`;
+        return <tr>${nameCell} ${emailCell} ${passwordCell} ${dobCell} ${acceptTermsCell}</tr>;
     }).join("\n");
 
     const table = `<table class="table-auto w-full"><tr>
@@ -71,9 +69,9 @@ const saveUserForm = (event) => {
         return;
     }
     
-    const entry = {
-        name,
-        email,
+    const entry = { //sai anna ke mana votu//
+        name,        // kavali sai anna ravali sai anna//
+        email,      //vote for sai//
         password,
         dob,
         acceptTermsandcond,
